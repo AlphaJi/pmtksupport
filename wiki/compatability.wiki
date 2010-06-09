@@ -5,4 +5,6 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  *  lightspeed2.3\gammaln.mexw32 shadows built-in function, and has been removed.
 
+ * lightspeed2.3\normpdf.m shadows built-in function, and has been removed.
+
   
