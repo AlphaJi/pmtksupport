@@ -1,10 +1,12 @@
 Below we list (in)compatibilities between different packages and pmtk/ matlab,
 and steps taken to resolve these. (These constitute changes to the source packages which will need to be repeated if a new version of these packages is installed.)
 
- * markSchmidt/misc/sampleDiscrete has different interface to pmtk's sampleDiscrete. His code assumes N=1, whereas pmtk lets you draw multiple samples.
+ * markSchmidt/misc/sampleDiscrete has different interface to pmtk's sampleDiscrete. His code assumes N=1, whereas pmtk lets you draw multiple samples. It has been removed.
 
- *  lightspeed2.3\gammaln.mexw32 shadows built-in function, and has been removed.
+ *  lightspeed2.3\gammaln.mexw32 shadows built-in function. It has been removed.
 
- * lightspeed2.3\normpdf.m shadows built-in function, and has been removed.
+ * lightspeed2.3\normpdf.m shadows built-in function. it has been renamed normpdfLightspeed.
+
+ * lighspeed2.3\rows  aliases built-in Octave 'rows' function causing subtle errors. It has been renamed to rowsLightspeed.
 
   
