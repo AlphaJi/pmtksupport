@@ -12,4 +12,4 @@
 
 == Updating a new Package ==
 
-To update a package, follow the same steps as above, but be sure to check [http://code.google.com/p/pmtksupport/wiki/compatibility this list] for compatibility you will need to manually redo. 
+To update a package, follow the same steps as above, but be sure to check [http://code.google.com/p/pmtksupport/wiki/compatibility this list] for compatibility changes you will need to manually redo. 
