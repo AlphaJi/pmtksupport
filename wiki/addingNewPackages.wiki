@@ -3,7 +3,7 @@
 == Adding a new Package ==
 
   # Check the package into the [http://code.google.com/p/pmtksupport/source/checkout svn repository]. It must live in its own subdirectory. Suppose this directory is called "foopack".
-  # Create a file called "foopack-meta.m" in the pmtkSupport/meta directory.
+  # Create a file called "foopack-meta.m" in the [http://pmtksupport.googlecode.com/svn/trunk/meta/ pmtkSupport/meta] directory.
   # Add PMTKtitle, PMTKauthor, PMTKurl, and PMTKdate tags. Follow [http://code.google.com/p/pmtksupport/source/browse/trunk/meta/graphViz4Matlab-meta.m this] as an example.
   # Add a new [http://code.google.com/p/pmtksupport/downloads/list pmtkSupport*.zip download] via e.g. [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/exportToGoogleCode.m exportToGoogleCode.m]. This file must be up to date for pmtkSupport auto-downloading to work. 
   # Modify the link to this new zip file in the PMTK3 [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, under the PMTKsupportLink property. Again, this is needed for auto-downloading. 
