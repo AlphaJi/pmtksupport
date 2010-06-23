@@ -9,3 +9,7 @@
   # Modify the link to this new zip file in the PMTK3 [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, under the PMTKsupportLink property. Again, this is needed for auto-downloading. 
   # Update the online list of packages by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateSupportReport.m generateSupportReport.m]. See [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here] for details. 
   # Test auto-downloading by removing the contents of pmtk3/external and running [http://code.google.com/p/pmtk3/source/browse/trunk/initPmtk3.m initPmtk3.m].
+
+== Updating a new Package ==
+
+To update a package, follow the same steps as above, but be sure to check [http://code.google.com/p/pmtksupport/wiki/compatibility this list] for compatibility you will need to manually redo. 
