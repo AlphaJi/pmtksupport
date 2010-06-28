@@ -6,10 +6,11 @@
   # [compatibility Document] any compatibility changes made.
   # Create a file called "foopack-meta.m" in the [http://pmtksupport.googlecode.com/svn/trunk/meta/ pmtkSupport/meta] directory.
   # Add PMTKtitle, PMTKauthor, PMTKurl, and PMTKdate [http://code.google.com/p/pmtk3/wiki/PMTKtags tags] to this file. Follow [http://code.google.com/p/pmtksupport/source/browse/trunk/meta/graphViz4Matlab-meta.m this] as an example.
-  # Add a new [http://code.google.com/p/pmtksupport/downloads/list pmtkSupport*.zip download] via e.g. [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/exportToGoogleCode.m exportToGoogleCode.m]. This file must be up to date for pmtkSupport auto-downloading to work. 
-  # Modify the link to this new zip file in the PMTK3 [http://pmtk3.googlecode.com/svn/trunk/config.txt config.txt] file, under the PMTKsupportLink property. Again, this is needed for auto-downloading. 
+  # Check the new directory into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
+  # Run this PMTK command to zip up the new package: `refreshZipFiles('support', 'foopack')`. 
+  # Check the zip file into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
   # Update the online list of packages by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateSupportReport.m generateSupportReport.m]. See [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here] for details. 
-  # Test auto-downloading by removing the contents of pmtk3/external and running [http://code.google.com/p/pmtk3/source/browse/trunk/initPmtk3.m initPmtk3.m]. _(Make sure the pmtkSupport local svn repository is not on your Matlab path.)_
+  # Test auto-downloading by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/installPmtkSupport.m installPmtkSupport].
 
 == Updating a Package ==
 
