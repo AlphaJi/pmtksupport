@@ -9,7 +9,7 @@
   # Run this PMTK command to zip up the new package: `refreshZipFiles('support', 'foopack')`. 
   # Check the zip file into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
   # Update the online list of packages by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateSupportReport.m generateSupportReport]. See [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here] for details. 
-  # Test auto-downloading by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/installPmtkSupport.m installPmtkSupport], which will download and unzip the packages to the [http://pmtk3.googlecode.com/external external] directory.
+  # Test auto-downloading by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/installPmtkSupport.m installPmtkSupport], which will download and unzip the packages to the [http://pmtk3.googlecode.com/svn/trunk/external external] directory.
 
 == Updating a Package ==
 
