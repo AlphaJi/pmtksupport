@@ -6,6 +6,7 @@
   # [compatibility Document] any compatibility changes made.
   # Create a file called "foopack-meta.m" in the [http://pmtksupport.googlecode.com/svn/trunk/meta/ pmtkSupport/meta] directory.
   # Add PMTKtitle, PMTKauthor, PMTKurl, and PMTKdate [http://code.google.com/p/pmtk3/wiki/PMTKtags tags] to this file. Follow [http://code.google.com/p/pmtksupport/source/browse/trunk/meta/graphViz4Matlab-meta.m this] as an example.
+ # Check the source files into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
   # Run this PMTK command to zip up the new package: `refreshZipFiles('support', 'foopack')`. 
   # Check the zip file into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
   # Update the online list of packages by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateSupportReport.m generateSupportReport]. See [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here] for details. 
