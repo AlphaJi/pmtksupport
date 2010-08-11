@@ -3,6 +3,10 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * markSchmidt/misc/sampleDiscrete has different interface to pmtk's sampleDiscrete. His code assumes N=1, whereas pmtk lets you draw multiple samples. It has been removed.
 
+ *  we do not call install_lightspeed.m as this shadows a number of built in functions
+
+ *  lightspeed2.3\randgamma.m - original version just errors if randgamma.mex* is not found. The change is to add this line instead: {{{x = randg(a);}}}. randg is a stats toolbox function that also exists in Octave.  
+
  *  lightspeed2.3\gammaln.mexw32 shadows built-in function. It has been removed.
 
  * lightspeed2.3\normpdf.m shadows built-in function. it has been renamed normpdfLightspeed.
