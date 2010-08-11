@@ -22,6 +22,6 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
 === general notes ===
 
-  * Many external packages have .mex* files, which may have to be regenerated under various operating systems if a package is updated. 
+  * Many external packages have {{{.mex*}}} files, which may have to be regenerated under various operating systems if a package is updated. 
 
   
