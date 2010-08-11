@@ -14,4 +14,14 @@ and steps taken to resolve these. (These constitute changes to the source packag
  * lighspeed2.3\rows  aliases built-in Octave 'rows' function causing subtle errors. It has been renamed to rowsLightspeed.
 
  * libsvm-mat-2.9.1\svmtrain.c and libsvm-mat-2.9.1\svmtrain.mex32 are aliased by the bioinformatics toolbox svmtrain.m function. These have been renamed libsvmTrain.c and libsvmTrain.mex32. 
+
+ * gpml-matlab - removed solve_chol.c which does not compile. There is a .m version.
+
+
+
+
+=== general notes ===
+
+  * Many external packages have .mex* files, which may have to be regenerated under various operating systems if a package is updated. 
+
   
