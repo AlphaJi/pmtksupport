@@ -15,6 +15,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * libsvm-mat-2.9.1\svmtrain.c and libsvm-mat-2.9.1\svmtrain.mex32 are aliased by the bioinformatics toolbox svmtrain.m function. These have been renamed libsvmTrain.c and libsvmTrain.mex32. 
 
+  * liblinear-1.51 train and predict files were renamed libLinearTrain and libLinearPredict to avoid name conflicts. This needs to be done for both the .mexw32 files in the windows subdirectory and the .mexglx files in the matlab subdirectory, (for use in linux). 
+
  * gpml-matlab - removed solve_chol.c which does not compile. There is a .m version.
 
 
