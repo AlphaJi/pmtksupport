@@ -19,7 +19,7 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * gpml-matlab - removed solve_chol.c which does not compile. There is a .m version.
 
- * libdai will need to be recompiled according to [compilingLibdai these instructions]. 
+ * libdai will need to be recompiled according to [http://code.google.com/p/pmtk3/wiki/compilingLibdai these instructions]. 
 
 
 === general notes ===
