@@ -19,6 +19,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * lightspeed2.3\glob.m aliases built-in Octave glob.m function causing path errors. It was renamed to globLS.m
 
+ * lightspeed2.3\argmax.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
+
 === libsvm-mat-2.9.1 ===
 
  * libsvm-mat-2.9.1\svmtrain.c and libsvm-mat-2.9.1\svmtrain.mex32 are aliased by the bioinformatics toolbox svmtrain.m function. These have been renamed libsvmTrain.c and libsvmTrain.mex32. 
