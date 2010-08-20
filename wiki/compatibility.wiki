@@ -21,6 +21,10 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * lightspeed2.3\argmax.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
 
+ * lightspeed2.3\argmin.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
+
+ * lightspeed2.3\diagamma.m renamed to diagammaLS.m. Matlab now has builtin psi function, which our digamma calls. 
+
 === libsvm-mat-2.9.1 ===
 
  * libsvm-mat-2.9.1\svmtrain.c and libsvm-mat-2.9.1\svmtrain.mex32 are aliased by the bioinformatics toolbox svmtrain.m function. These have been renamed libsvmTrain.c and libsvmTrain.mex32. 
