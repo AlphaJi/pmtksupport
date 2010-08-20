@@ -11,6 +11,7 @@
   # Check the zip file into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
   # Update the online list of packages by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateSupportReport.m generateSupportReport]. See [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here] for details. 
   # Test auto-downloading by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/downloadAllSupport.m downloadAllSupport], which will download and unzip the packages to the [http://pmtk3.googlecode.com/svn/trunk/external external] directory.
+  # Make sure the new package hasn't shadowed existing files by running {{{shadowedFilesReport}}}.
 
 == Updating a Package ==
 
