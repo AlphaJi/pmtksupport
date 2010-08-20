@@ -25,6 +25,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * lightspeed2.3\digamma.m renamed to digammaLS.m. Matlab now has builtin psi function, which our digamma calls. 
 
+ * lightspeed2.3\ind2subv.m renamed ind2subvLS. A new bsxfun version lives in matlabTools.
+ 
 === libsvm-mat-2.9.1 ===
 
  * libsvm-mat-2.9.1\svmtrain.c and libsvm-mat-2.9.1\svmtrain.mex32 are aliased by the bioinformatics toolbox svmtrain.m function. These have been renamed libsvmTrain.c and libsvmTrain.mex32. 
