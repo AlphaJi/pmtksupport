@@ -35,6 +35,9 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * libdai will need to be recompiled according to [http://code.google.com/p/pmtk3/wiki/compilingLibdai these instructions]. 
 
+=== GGM-GWishart ===
+
+Their cov2cor.m is functionally identical to ours. It was removed 
 
 === general notes ===
 
