@@ -46,6 +46,9 @@ and steps taken to resolve these. (These constitute changes to the source packag
 === GGM-GWishart ===
 
   * Their cov2cor.m is functionally identical to ours. It was removed 
+  
+  * Duplicate logsumexp.m function removed. 
+
 
 === general notes ===
 
