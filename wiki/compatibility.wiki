@@ -28,6 +28,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
  * ind2subv.m renamed ind2subvLS. A new bsxfun version lives in matlabTools.
 
  * logdet.m renamed logdetLS.m, (almost the same as our except for error condition).
+
+ * setdiag.m renamed setdiagLS.m.
  
 === libsvm-mat-2.9.1 ===
 
