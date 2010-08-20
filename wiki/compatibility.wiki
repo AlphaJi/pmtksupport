@@ -49,6 +49,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
   
   * Duplicate logsumexp.m function removed. 
 
+  * normalizeLogspace.m removed, (same as ours except for repmat -> bsxfun)
+
 
 === general notes ===
 
