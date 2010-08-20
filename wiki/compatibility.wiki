@@ -5,6 +5,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * markSchmidt/misc/sampleDiscrete has different interface to pmtk's sampleDiscrete. His code assumes N=1, whereas pmtk lets you draw multiple samples. It has been removed.
 
+ * KPM directory has many duplicates - these were all removed. 
+
 === lightspeed ===
 
  *  we do not call install_lightspeed.m as this shadows a number of built in functions, instead we use installLightspeedPMTK.m.
