@@ -11,6 +11,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * Foreign/lars.m was removed; its already in pmtkSupport as its own package. 
 
+ * Foreign/minimize.m was removed; its already in gpml-matlab.
+
 === lightspeed ===
 
  *  we do not call install_lightspeed.m as this shadows a number of built in functions, instead we use installLightspeedPMTK.m.
