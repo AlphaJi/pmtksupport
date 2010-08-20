@@ -9,23 +9,25 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  *  we do not call install_lightspeed.m as this shadows a number of built in functions, instead we use installLightspeedPMTK.m.
 
- *  lightspeed2.3\randgamma.m - original version just errors if randgamma.mex is not found. The change is to add this line instead: {{{x = randg(a);}}}. randg is a stats toolbox function that also exists in Octave. It has the same interface as randgamma. 
+ *  randgamma.m - original version just errors if randgamma.mex is not found. The change is to add this line instead: {{{x = randg(a);}}}. randg is a stats toolbox function that also exists in Octave. It has the same interface as randgamma. 
 
- *  lightspeed2.3\gammaln.mexw32 shadows built-in function. It has been removed.
+ *  gammaln.mexw32 shadows built-in function. It has been removed.
 
- * lightspeed2.3\normpdf.m shadows built-in function. it has been renamed normpdfLightspeed.
+ * normpdf.m shadows built-in function. it has been renamed normpdfLightspeed.
 
- * lighspeed2.3\rows  aliases built-in Octave 'rows' function causing subtle errors. It has been renamed to rowsLightspeed.
+ * rows.m  aliases built-in Octave 'rows' function causing subtle errors. It has been renamed to rowsLightspeed.
 
- * lightspeed2.3\glob.m aliases built-in Octave glob.m function causing path errors. It was renamed to globLS.m
+ * glob.m aliases built-in Octave glob.m function causing path errors. It was renamed to globLS.m
 
- * lightspeed2.3\argmax.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
+ * argmax.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
 
- * lightspeed2.3\argmin.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
+ * argmin.m behaves differently than PMTK's argmax.m. It was renamed argmaxLS.m
 
- * lightspeed2.3\digamma.m renamed to digammaLS.m. Matlab now has builtin psi function, which our digamma calls. 
+ * digamma.m renamed to digammaLS.m. Matlab now has builtin psi function, which our digamma calls. 
 
- * lightspeed2.3\ind2subv.m renamed ind2subvLS. A new bsxfun version lives in matlabTools.
+ * ind2subv.m renamed ind2subvLS. A new bsxfun version lives in matlabTools.
+
+ * logdet.m renamed logdetLS.m, (almost the same as our except for error condition).
  
 === libsvm-mat-2.9.1 ===
 
@@ -51,6 +53,9 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
   * normalizeLogspace.m removed, (same as ours except for repmat -> bsxfun)
 
+=== bayes_logit_0.1.2 ===
+
+  * renamed logdet.m, logdetBL.m.
 
 === general notes ===
 
