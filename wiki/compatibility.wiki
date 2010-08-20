@@ -1,7 +1,11 @@
 Below we list (in)compatibilities between different packages and pmtk/ matlab,
 and steps taken to resolve these. (These constitute changes to the source packages which will need to be repeated if a new version of these packages is installed.)
 
+=== markSchmidt ===
+
  * markSchmidt/misc/sampleDiscrete has different interface to pmtk's sampleDiscrete. His code assumes N=1, whereas pmtk lets you draw multiple samples. It has been removed.
+
+=== lightspeed ===
 
  *  we do not call install_lightspeed.m as this shadows a number of built in functions, instead we use installLightspeedPMTK.m.
 
@@ -13,11 +17,21 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * lighspeed2.3\rows  aliases built-in Octave 'rows' function causing subtle errors. It has been renamed to rowsLightspeed.
 
+ * lightspeed2.3\glob.m aliases built-in Octave glob.m function causing path errors. It was renamed to globLS.m
+
+=== libsvm-mat-2.9.1 ===
+
  * libsvm-mat-2.9.1\svmtrain.c and libsvm-mat-2.9.1\svmtrain.mex32 are aliased by the bioinformatics toolbox svmtrain.m function. These have been renamed libsvmTrain.c and libsvmTrain.mex32. 
+
+=== liblinear-1.5.1 ===
 
   * liblinear-1.51 train and predict files were renamed libLinearTrain and libLinearPredict to avoid name conflicts. This needs to be done for both the .mexw32 files in the windows subdirectory and the .mexglx files in the matlab subdirectory, (for use in linux). 
 
+=== gpml-matlab ===
+
  * gpml-matlab - removed solve_chol.c which does not compile. There is a .m version.
+
+=== libdai ===
 
  * libdai will need to be recompiled according to [http://code.google.com/p/pmtk3/wiki/compilingLibdai these instructions]. 
 
