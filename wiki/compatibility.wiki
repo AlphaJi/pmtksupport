@@ -15,6 +15,8 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
 === lightspeed ===
 
+ * There are many duplicate mostly identical files between lightspeed and fastfit. These, were removed from fastfit.
+
  *  we do not call install_lightspeed.m as this shadows a number of built in functions, instead we use installLightspeedPMTK.m.
 
  *  randgamma.m - original version just errors if randgamma.mex is not found. The change is to add this line instead: {{{x = randg(a);}}}. randg is a stats toolbox function that also exists in Octave. It has the same interface as randgamma. 
