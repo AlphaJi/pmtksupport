@@ -13,7 +13,7 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * Foreign/minimize.m was removed; its already in gpml-matlab.
 
- * Added a file called lbfgsC.m, which just calls lbfgs.m. This is needed in case lbfgsC.mex* is not available for the user's system. 
+ * Added a file called lbfgsC.m, which just calls lbfgs.m. This is needed in case {{{lbfgsC.mex*}}} is not available for the user's system. 
 
 === lightspeed ===
 
