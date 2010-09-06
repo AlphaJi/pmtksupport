@@ -5,7 +5,7 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * markSchmidt/misc/sampleDiscrete has different interface to pmtk's sampleDiscrete. His code assumes N=1, whereas pmtk lets you draw multiple samples. It has been removed.
 
- * KPM directory has many duplicates - these were all removed. 
+ * KPM directory has many duplicates - these were all removed, (the most important of these is process_options.m; Mark's version does not call prepareArgs). 
 
  * Foreign/randraw.m was removed; its already in pmtkSupport as its own package. 
 
