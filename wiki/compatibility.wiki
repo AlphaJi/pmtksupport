@@ -15,7 +15,7 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * Added a file called lbfgsC.m, which just calls lbfgs.m. This is needed in case {{{lbfgsC.mex*}}} is not available for the user's system. 
 
- * Added max_mult.m as a backup for users without the appropriate max_mult.mex*. Note backup m-files must live in the same directory as the .mex files. max_mult.m has this matlab implementation: 
+ * Added max_mult.m as a backup for users without the appropriate {{{max_mult.mex*}}}. Note backup m-files must live in the same directory as the .mex files. max_mult.m has this matlab implementation: 
 {{{
 function M = max_mult(A, B)
 %% Just like the matrix multipliation of A and B, except we max instead of sum
