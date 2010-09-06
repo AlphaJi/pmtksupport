@@ -15,6 +15,14 @@ and steps taken to resolve these. (These constitute changes to the source packag
 
  * Added a file called lbfgsC.m, which just calls lbfgs.m. This is needed in case {{{lbfgsC.mex*}}} is not available for the user's system. 
 
+ * Added max_mult.m as a backup for users without the appropriate max_mult.mex*. Note backup m-files must live in the same directory as the .mex files. max_mult.m has this matlab implementation: 
+{{{
+function M = max_mult(A, B)
+%% Just like the matrix multipliation of A and B, except we max instead of sum
+M = squeeze(max(bsxfun(@times, A, permute(B, [3 1 2])), [], 2)); 
+end
+}}}
+
 === lightspeed ===
 
  * There are many duplicate mostly identical files between lightspeed and fastfit. These, were removed from fastfit.
