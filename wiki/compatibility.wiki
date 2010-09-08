@@ -1,5 +1,5 @@
 Below we list (in)compatibilities between different packages and pmtk/ matlab,
-and steps taken to resolve these. (These constitute changes to the source packages which will need to be repeated if a new version of these packages is installed.)
+and steps taken to resolve these. _These constitute changes to the source packages which will need to be repeated if a new version of these packages is installed._
 
 === markSchmidt ===
 
@@ -33,9 +33,11 @@ end
 
  *  gammaln.mexw32 shadows built-in function. It has been removed.
 
- * normpdf.m shadows built-in function. it has been renamed normpdfLightspeed.
+*  repmat.mexw32 shadows built-in function. It has been renamed repmatLS.mexw32.
 
- * rows.m  aliases built-in Octave 'rows' function causing subtle errors. It has been renamed to rowsLightspeed.
+ * normpdf.m shadows built-in function. it has been renamed normpdfLS.
+
+ * rows.m  aliases built-in Octave 'rows' function causing very obscure errors in apparently unrelated functions. It has been renamed to rowsLS.
 
  * glob.m aliases built-in Octave glob.m function causing path errors. It was renamed to globLS.m
 
@@ -77,10 +79,13 @@ end
 
 === bayes_logit_0.1.2 ===
 
-  * renamed logdet.m, logdetBL.m.
+  * renamed logdet.m to logdetBL.m.
 
 === general notes ===
 
   * Many external packages have {{{.mex*}}} files, which may have to be regenerated under various operating systems if a package is updated. 
+
+  * If multiple files exist on the path, the one at the beginning will shadow the others.
+
 
   
