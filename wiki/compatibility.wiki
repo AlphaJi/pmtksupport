@@ -27,7 +27,7 @@ and steps taken to resolve these. _These constitute changes to the source packag
 
  *  gammaln.mexw32 shadows built-in function. It has been removed.
 
-*  repmat.mexw32 shadows built-in function. It has been renamed repmatLS.mexw32.
+ *  repmat.mexw32 shadows built-in function. It has been renamed repmatLS.mexw32.
 
  * normpdf.m shadows built-in function. it has been renamed normpdfLS.
 
