@@ -16,5 +16,4 @@
  
   * Test auto-downloading by running [http://pmtk3.googlecode.com/svn/trunk/pmtkTools/supportTools/downloadAllSupport.m downloadAllSupport], which will download and unzip the packages to the [http://pmtk3.googlecode.com/svn/trunk/external external] directory.
 
-  * Make sure the new package hasn't shadowed existing files by running 
-[http://pmtk3.googlecode.com/svn/trunk/matlabTools/metaTools/shadowedFilesReport.m shadowedFilesReport]
+  * Make sure the new package hasn't shadowed existing files by running [http://pmtk3.googlecode.com/svn/trunk/matlabTools/metaTools/shadowedFilesReport.m shadowedFilesReport]
