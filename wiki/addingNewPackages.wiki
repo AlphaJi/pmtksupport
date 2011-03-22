@@ -2,14 +2,16 @@
 
 == Adding a new Package ==
 
-  # Check the package into the [http://code.google.com/p/pmtksupport/source/checkout svn repository]. It must live in its own subdirectory. Suppose this directory is called "foopack".
-  # [compatibility Document] any compatibility changes made.
-  # Create a file called "foopack-meta.m" in the [http://pmtksupport.googlecode.com/svn/trunk/meta/ pmtkSupport/meta] directory.
-  # Add PMTKtitle, PMTKauthor, PMTKurl, and PMTKdate [http://code.google.com/p/pmtk3/wiki/PMTKtags tags] to this file. Follow [http://code.google.com/p/pmtksupport/source/browse/trunk/meta/graphViz4Matlab-meta.m this] as an example.
-  # Check the meta file into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
-  # Run this PMTK command to zip up the new package: `refreshZipFiles('support', 'foopack')`. 
+  # Create new directory, say 'foopack, for the package. Create a file called "foopack-readme.txt". This file should have PMTKtitle, PMTKauthor, PMTKurl, and PMTKdate [http://code.google.com/p/pmtk3/wiki/PMTKtags tags]. Follow [http://code.google.com/p/pmtksupport/source/browse/trunk/graphViz4Matlab-readme.txt this] as  example.
+
+  # Check the package into the [http://code.google.com/p/pmtksupport/source/checkout svn repository]. It must live in its own subdirectory.
+
+  # Run this PMTK command: `refreshZipFiles('support', 'foopack')`. This will download the files to a local directory, and create a zip file out of them.
+
   # Check the zip file into the [http://code.google.com/p/pmtksupport/source/checkout svn repository].
+
   # Update the online list of packages by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/docTools/generateSupportReport.m generateSupportReport]. See [http://code.google.com/p/pmtk3/wiki/updatingDocumentation here] for details. 
+
   # Test auto-downloading by running [http://pmtk3.googlecode.com/svn/trunk/toolbox/metatools/downloadAllSupport.m downloadAllSupport], which will download and unzip the packages to the [http://pmtk3.googlecode.com/svn/trunk/external external] directory.
   # Make sure the new package hasn't shadowed existing files by running {{{shadowedFilesReport}}}.
 
